@@ -1,0 +1,255 @@
+/* ------------------ COLORS ----------------- */
+
+// Primary
+$soft-orange: hsl(35, 77%, 62%);
+$soft-red: hsl(5, 85%, 63%);
+
+// Neutral
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$dark-grayish-blue: hsl(236, 13%, 42%);
+$very-dark-blue: hsl(240, 100%, 5%);
+
+/* ------------------ CSS RESET ----------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: $off-white;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ------------------ CSS RESET ----------------- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2rem;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 6rem 3.5rem;
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 2rem;
+
+    a {
+      color: $dark-grayish-blue;
+
+      &:hover {
+        color: $soft-red;
+      }
+
+      li {
+        list-style: none;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.container {
+  width: 1112px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  height: auto;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      .image-container {
+        picture img {
+          width: 730px;
+        }
+      }
+      .text-container {
+        display: flex;
+        margin-top: 30px;
+        padding-right: 30px;
+
+        .title {
+          width: 380px;
+
+          h1 {
+            font-weight: 800;
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+          }
+        }
+
+        .text {
+          width: 350px;
+
+          p {
+            color: $dark-grayish-blue;
+            font-size: 0.938rem;
+            line-height: 1.5rem;
+            margin-top: -4px;
+          }
+        }
+
+        .button-container {
+          height: 48px;
+          width: 185px;
+          background-color: $soft-red;
+          margin-top: 35px;
+
+          a {
+            height: 48px;
+            width: 185px;
+            font-weight: 700;
+            font-size: 0.938rem;
+            color: $off-white;
+            letter-spacing: 0.313rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  aside {
+    .articles-container {
+      height: 100%;
+      width: 350px;
+      background-color: $very-dark-blue;
+
+      .articles-container-title {
+        padding: 1.75rem 0 0 1.563rem;
+        font-size: 2.375rem;
+        font-weight: 700;
+        color: $soft-orange;
+      }
+
+      article {
+        padding: 1.875rem 1.5rem 2rem;
+        border-bottom: 1px solid $dark-grayish-blue;
+        h3 {
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: $off-white;
+          padding-bottom: 10px;
+        }
+
+        p {
+          font-size: 15px;
+          color: $grayish-blue;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+.news-section {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 0px;
+
+    .news-1,
+    .news-2,
+    .news-3 {
+      flex: 1;
+      display: flex;
+      margin-top: 72px;
+      margin-bottom: 130px;
+    }
+
+    .news-2,
+    .news-3 {
+      margin-left: 30px;
+    }
+
+    img {
+      width: 100px;
+      margin-right: 25px;
+    }
+
+    .article-number {
+      display: block;
+      color: $grayish-blue;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    h4 {
+      color: $very-dark-blue;
+      font-weight: 800;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      font-size: 1.125rem;
+    }
+
+    p {
+      font-size: 0.938rem;
+      line-height: 1.688rem;
+    }
+  }
+}
