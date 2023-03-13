@@ -85,6 +85,7 @@ header {
     justify-content: space-between;
     justify-items: center;
     gap: 2rem;
+    list-style-type: none;
 
     a {
       color: $dark-grayish-blue;
@@ -94,7 +95,6 @@ header {
       }
 
       li {
-        list-style: none;
         font-size: 1.1rem;
       }
     }

@@ -72,6 +72,7 @@ header ul {
   justify-content: space-between;
   justify-items: center;
   gap: 2rem;
+  list-style-type: none;
 }
 header ul a {
   color: hsl(236deg, 13%, 42%);
@@ -80,7 +81,6 @@ header ul a:hover {
   color: hsl(5deg, 85%, 63%);
 }
 header ul a li {
-  list-style: none;
   font-size: 1.1rem;
 }
 
